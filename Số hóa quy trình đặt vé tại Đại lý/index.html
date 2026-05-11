@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+        td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="/search-flights" method="get">
+        <fieldset>
+            <legend><h2>Đặt vé máy bay</h2></legend>
+            <label for="name">Tên: </label>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email"><br>
+            <label for="tel">Số điện thoại: </label>
+            <input type="tel" pattern="[0-9]{10}" id="tel" name="tel"><br>
+            <label for="date">Ngày sinh: </label>
+            <input type="date" id="date" name="date"><br>
+            Giới tính: <br>
+            <input type="radio" id="male" name="sex">
+            <label for="male">Nam</label><br>
+            <input type="radio" id="female" name="sex">
+            <label for="female">Nữ</label><br>
+            Hạng ghế: <br>
+            <input type="radio" id="normal" name="chair">
+            <label for="normal">Phổ thông</label><br>
+            <input type="radio" id="vip" name="chair">
+            <label for="vip">Thương gia</label><br>
+            <input type="radio" id="st" name="chair">
+            <label for="st">Hạng nhất</label><br>
+            <select name="chuyenbay" id="chuyenbay">
+                <option value="">Chọn chuyến bay..</option>
+                <option value="hn-sg">Hà Nội - TP HCM</option>
+                <option value="hn-dn">Hà Nội - Đà Nẵng</option>
+                <option value="dn-ct">Đà Nẵng - Cần Thơ</option>
+                <option value="hp-pq">Hải Phòng - Phú Quốc</option>
+                <option value="sg-sgp">TP HCM - Singapore</option>
+            </select><br>
+            <input type="submit" name="submit" value="Gửi đi" style="margin: 20px 20px 0 0;">
+        </fieldset>
+
+        <h2>Lịch bay hôm nay</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Mã chuyến</th>
+                    <th>Hành trình</th>
+                    <th>Giờ bay</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>VN-102</td>
+                    <td>Hà Nội - TP HCM</td>
+                    <td>08:30</td>
+                </tr>
+                <tr>
+                    <td>VN-107</td>
+                    <td>Hà Nội - Đà Nẵng</td>
+                    <td>10:35</td>
+                </tr>
+                <tr>
+                    <td>VJ-455</td>
+                    <td colspan="2">Đà Nẵng - Cần Thơ (ĐÃ HỦY)</td>
+                </tr>
+                <tr>
+                    <td>QH-211</td>
+                    <td>Hải Phòng - Phú Quốc</td>
+                    <td rowspan="2">17:05</td>
+                </tr>
+                <tr>
+                    <td>VN-724</td>
+                    <td>TP HCM - Singapore</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"><strong>Chuyến bay còn lại</strong></td>
+                    <td>4</td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+</html>
