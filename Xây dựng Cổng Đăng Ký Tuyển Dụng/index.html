@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Tuyển dụng TechTalent</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Thông tin cá nhân</legend>
+            <label for="name">Họ và tên: </label>
+            <input type="text" id="name" name="ten" required placeholder="Nhập tên"><br>
+            <label for="pass">Mật khẩu hệ thống: </label>
+            <input type="password" id="pass" name="matkhau" required minlength="8" maxlength="30" placeholder="Nhập mật khẩu"><br>
+            <label for="myEmail">Email liên hệ: </label>
+            <input type="email" id="myEmail" name="email" required placeholder="Nhập Email"><br>
+            Giới tính: <br>
+            <input type="radio" name="sex" id="nam" value="male" required>
+            <label for="nam">Nam</label><br>
+            <input type="radio" name="sex" id="nu" value="female" required>
+            <label for="nu">Nữ</label><br>
+            <label for="birthday">Ngày sinh: </label>
+            <input type="date" id="birthday" name="ngaysinh" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Thông tin chuyên môn</legend>
+            Vị trí ứng tuyển: <br>
+            <select name="vi tri tuyen dung" required>
+                <option value="">Chọn vị trí</option>
+                <option value="fe">Frontend Developer (React/Vue/Angular)</option>
+                <option value="ba">Backend Developer (Node.js/Python/Java)</option>
+                <option value="ma">Mobile App Developer (iOS/Android)</option>
+                <option value="fs">Fullstack Developer</option>
+                <option value="qa">QA/QC Automation Engineer</option>
+            </select><br>
+            <label for="cv">Nộp CV (Định dang PDF): </label>
+            <input type="file" id="cv" name="cv" accept=".pdf" required><br>
+            <input type="submit" name="nop" value="Gửi Hồ Sơ">
+        </fieldset>
+    </form>
+</body>
+</html>

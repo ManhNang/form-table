@@ -1,0 +1,24 @@
+🕵️ Kịch bản 1: "Email kiểu gì cũng được, miễn là có chữ"
+Hành động của Bác Tèo: Tôi thấy ô Email, tôi nhập luôn là: teocongnghe_gmail.com (tôi quên mất phím @ nằm ở đâu rồi).
+
+Kết quả Test: * HTML5 có chặn được không? CÓ. Thuộc tính type="email" trong code của bạn sẽ phát huy tác dụng.
+
+Phản ứng của trình duyệt: Nó sẽ hiện một cái bảng báo lỗi: "Please include an '@' in the email address...". Tôi sẽ không thể gửi đơn đi được cho đến khi tìm thấy dấu @.
+
+Đánh giá: THÀNH CÔNG. Bạn đã chặn được những người nhập địa chỉ mail thiếu cấu trúc cơ bản.
+
+🕵️ Kịch bản 2: "Cứ bấm 'Gửi' đại đi, chắc là được"
+Hành động của Bác Tèo: Tôi mới nhập được cái Tên và Mật khẩu, định đi pha ấm trà nên tôi bấm luôn nút "Gửi Hồ Sơ" trong khi chưa chọn Giới tính, chưa chọn Vị trí ứng tuyển và chưa nộp CV.
+
+Kết quả Test: * HTML5 có chặn được không? CÓ. Bạn đã đặt thuộc tính required ở hầu hết các ô.
+
+Phản ứng của trình duyệt: Trình duyệt sẽ nhảy đến ô trống đầu tiên (ví dụ là Email hoặc Giới tính) và bắt tôi phải điền.
+
+Đánh giá: THÀNH CÔNG. Nhờ có required, đội Data của bạn sẽ không nhận được những bộ hồ sơ "trống rỗng" hay thiếu thông tin quan trọng.
+
+🕵️ Kịch bản 3: "CV là cái ảnh thẻ của tôi đúng không?"
+Hành động của Bác Tèo: Tôi thấy ghi "Nộp CV", tôi tưởng là nộp ảnh chân dung của tôi cho công ty ngắm, nên tôi định chọn cái file anh_the_bac_teo.jpg.
+
+Kết quả Test: * HTML5 có chặn được không? CÓ (nhưng chưa tuyệt đối). * Phản ứng của trình duyệt: Nhờ có thuộc tính accept=".pdf", khi tôi bấm chọn file, trình duyệt sẽ mặc định ẩn các file ảnh đi và chỉ hiện file PDF.
+
+Đánh giá: TỐT. Tuy nhiên, nếu tôi cố tình "lách" bằng cách chọn chế độ "All Files" trong cửa sổ Windows thì trình duyệt vẫn có thể cho phép tôi chọn file ảnh. Để chắc chắn 100%, sau này bạn nên nhờ mấy cậu Backend kiểm tra lại một lần nữa khi file đã tải lên.
