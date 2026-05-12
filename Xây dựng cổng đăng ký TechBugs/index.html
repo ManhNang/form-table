@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xây dựng Cổng đăng ký "Chiến binh săn lỗi"</title>
+</head>
+<body>
+    <h2>Đăng ký tham gia săn lỗi</h2>
+    <form action="#" method="get">
+        <label for="name">Họ và tên: </label>
+        <input type="text" name="name" id="name" required placeholder="Nhập tên"><br><br>
+        <label for="email">Email liên hệ: </label>
+        <input type="email" name="email" id="email" required placeholder="Nhập email"><br><br>
+        <label for="pass">Mật khẩu hệ thống: </label>
+        <input type="password" name="pass" id="pass" required minlength="8" placeholder="Nhập mật khẩu"><br><br>
+        Trình độ của bạn:
+        <input type="radio" name="level" id="newbie" value="Newbie">
+        <label for="newbie"> Mới tập chơi</label>
+        <input type="radio" name="level" id="pro" value="Pro">
+        <label for="pro"> Chuyên nghiệp</label><br><br>
+        <label for="exp">Kinh nghiệm nền tảng: </label>
+        <select name="exp" id="exp" required>
+            <option value="">Chọn</option>
+            <option value="Web">Web</option>
+            <option value="Mobile App">Mobile App</option>
+        </select><br><br>
+        <label for="reason">Lý do tham gia</label><br>
+        <textarea name="reason" id="reason" required></textarea><br><br>
+        <input type="submit" name="register" value="Đăng ký ngay">
+    </form>
+</body>
+</html>
