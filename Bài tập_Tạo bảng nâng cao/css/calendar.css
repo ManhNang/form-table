@@ -1,0 +1,42 @@
+h1{
+    color: blue;
+    text-align: center;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+}
+
+tr{
+    text-align: center;
+}
+
+span{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.day-of-the-week{
+    background-color: chocolate;
+    color: white;
+    height: 40px;
+}
+
+.sun{
+    color: red;
+}
+
+.sat{
+    color: blue;
+}
+
+.main{
+    border-collapse: collapse;
+}
+
+.day{
+    border: 3px solid #c0c0c0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
