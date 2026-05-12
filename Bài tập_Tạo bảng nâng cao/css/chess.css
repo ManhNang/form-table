@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(216, 168, 34);
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.square-black, .square-white{
+    text-align: center;
+    width: 80px;
+}
+
+td{
+    height: 80px;
+}
+
+.square-white {
+    background-color: white;
+}
+
+.square-black{
+    background-color: black;
+}
